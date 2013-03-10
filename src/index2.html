@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,  initial-scale=0.5, maximum-scale=1"/>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<script src="js/coreAjax.js"></script>
+<script src="js/coreUrl.js"></script>
+<script src="js/carousel.js"></script>
+
+
+<script src="js/coreMainPageLoader.js"></script>
+
+     <script type="text/javascript">
+	 
+	        $(document).ready(function()
+            {			
+				$(document).configureMainPage('imgTopItem', 'buttonListDiv', interestingProductUrl);
+				
+				
+					$('.slideshow-container').dacSlideshow({
+						auto: true,
+						btnPrev: '.slideshow-prev',
+						btnNext: '.slideshow-next'
+				});
+  			
+			});  
+	 </script>
+	 
+<!-- Home -->
+
+
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <a data-role="button" href="#page1" data-icon="bars" class="ui-btn-right">
+           Category</a>
+        <h3>
+            Best Buy
+        </h3>
+    </div>
+    <div data-role="content">
+        <div style="width: 288px; height: 220px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;" id="imgTopItem">
+            <img id="imgTopItem" src="http://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+			
+			
+			<div class="slideshow-container">
+   <a href="" class="slideshow-prev">Prev</a>
+    <a href="" class="slideshow-next">Next</a>
+    <ul>
+        <li class="item"><img src="images/t.jpg"></li>
+       <li class="item"><img src="images/v.jpg"></li>
+    </ul>
+   </div>
+			
+			
+			
+			
+        </div>
+        <div id="" class="ui-grid-a">
+            <div class="ui-block-a">
+                <a data-role="button" href="vendorProduct.html?id=AEONB" data-ajax="false">
+				    AEO Big	
+                </a>
+                <a data-role="button" href="vendorProduct.html?id=GIANT" data-ajax="false">
+                    Giant
+                </a>
+                <a data-role="button" href="vendorProduct.html?id=COLD" data-ajax="false">
+                    Cold Storage
+                </a>
+				
+				 <a data-role="button" href="vendorProduct.html?id=NSK" data-ajax="false">
+                    NSK
+                </a>
+				
+            </div>
+            <div class="ui-block-b">
+                <a data-role="button" href="vendorProduct.html?id=Tesco" data-ajax="false">
+                    Tesco
+                </a>
+                <a data-role="button" href="vendorProduct.html?id=ESAVE" data-ajax="false">
+                    EconSave
+                </a>
+                <a data-role="button" href="vendorProduct.html?id=Jusco" data-ajax="false">
+                    Jusco
+                </a>
+				
+				<a data-role="button" href="vendorProduct.html?id=CS" data-ajax="false">
+                    CS Brothers
+                </a>
+				
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</html>
